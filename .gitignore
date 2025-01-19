@@ -1,0 +1,77 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+db.sqlite3
+media/
+staticfiles/
+
+# Virtual environment
+env/
+venv/
+ENV/
+.venv/
+
+# VS Code settings
+.vscode/
+
+# IDE files
+.idea/
+*.iml
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Tests
+coverage/
+*.cover
+*.py,cover
+.hypothesis/
+.tox/
+
+# Pip
+*.pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environment variables
+.env
+.env.*
+
+# Deployment
+*.manifest
+*.spec
+
+# pyenv
+.python-version
+
+# Ignore Python cache files
+__pycache__/
+
+# Ignore SQLite database
+db.sqlite3
+
+# Ignore migration files except __init__.py
+main/migrations/*.py
+!main/migrations/__init__.py
+
+
+# Celery
+cel
