@@ -5,4 +5,4 @@ from django.http import HttpResponse
 
 def index(request):
     
-    return HttpResponse("Test fire...")
+    return render(request,'index.html')

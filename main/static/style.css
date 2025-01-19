@@ -1,0 +1,34 @@
+body {
+    background: linear-gradient(to bottom right, #664891, #006699);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    margin: 0 1rem;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+.cta-button {
+    font-weight: bold;
+}
