@@ -12,12 +12,18 @@
     <!-- Image -->
     <img src="{% static 'assets/img/Untitled.png' %}" alt="Your Image" class="image">
 
-    <!-- Main Container -->
     <div class="container">
         <h1>Skill<br>Swap</h1>
         <div class="button-container">
-            <button>"Megatron didn’t rise by slacking—neither will you"</button>
-            <button class="cta-button">Explore courses</button>
+            <button class="quote-button">"Megatron didn’t rise by slacking—neither will you"</button>
+            <div class="cta-container">
+                <button class="cta-button">Explore Courses</button>
+                <a href="{% url 'register' %}">
+                    <button class="cta-button">Signup</button>
+                </a>
+                
+                <button class="auth-button">Login</button>
+            </div>
         </div>
     </div>
 </body>

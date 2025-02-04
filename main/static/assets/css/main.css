@@ -1,35 +1,38 @@
+/* General Styles */
 body {
     background: linear-gradient(to right, #ffe5b4, #ffd700);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Center vertically */
+    flex-direction: column;
     min-height: 100vh;
     font-family: sans-serif;
     margin: 0;
     padding: 0;
     border: 20px solid white;
-    position: relative; /* Allow absolute positioning of the image */
+    position: relative; 
 }
 
+/* Image Styling */
 .image {
-    position: absolute; /* Positions the image relative to the body */
-    top: 20px; /* Adjusts the distance from the top */
-    right: 20px; /* Adjusts the distance from the right */
-    width: 300px; /* 3x the original width */
-    height: 300px; /* 3x the original height */
-    border-radius: 50%; /* Keeps the image circular */
-    object-fit: cover; /* Ensures the image fills the circular shape without distortion */
-    background-color: white; /* Optional: Use if you want a background color for contrast */
-    border: 5px solid white; /* Optional: Creates a white border around the circular image */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for a better look */
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    background-color: white; 
+    border: 5px solid white; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-
+/* Container */
 .container {
     text-align: center;
 }
 
+/* Heading */
 h1 {
     font-size: 4rem;
     color: black;
@@ -37,24 +40,108 @@ h1 {
     margin-bottom: 2rem;
 }
 
+/* Button Container */
 .button-container {
     display: flex;
     flex-direction: column;
-    gap: 1rem; /* Add space between buttons */
+    gap: 1rem; 
     align-items: center;
 }
 
+/* Buttons */
 button {
     padding: 1rem 2rem;
     border: none;
     border-radius: 5px;
-    background-color: black;
-    color: white;
     font-size: 1rem;
     cursor: pointer;
 }
 
+/* Quote Button */
+.quote-button {
+    background-color: black;
+    color: white;
+}
+
+/* Explore Courses Button */
 .cta-button {
     font-weight: bold;
-    background-color: #ff4500; /* Different color for CTA button */
+    background-color: #ff4500; /* Orange */
+    color: white;
+}
+
+.cta-button:hover {
+    background-color: #e03e00; /* Darker orange */
+}
+
+/* Sign Up & Login Buttons */
+.cta-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.auth-button {
+    font-weight: bold;
+    background-color: red;
+    color: white;
+}
+
+.auth-button:hover {
+    background-color: darkred;
+}
+
+/* Signup Page Container */
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 0vh;
+}
+
+/* Signup Box */
+.signup-box {
+    background-color: red;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Form Styling */
+.auth-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Input Fields */
+.auth-form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit Button */
+.auth-form button {
+    width: 100%;
+    background-color: red;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.auth-form button:hover {
+    background-color: darkred;
 }
