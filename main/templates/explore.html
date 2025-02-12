@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Courses</title>
+    <link href="{% static 'assets/css/explore.css' %}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Explore Courses</h1>
+        <p class="subtitle">Discover and connect with skilled individuals</p>
+
+        <div class="course-list">
+            <div class="course-card">
+                <h2>Pedri</h2>
+                <p><strong>Skill:</strong> Python Programming</p>
+                <p><strong>Experience:</strong> 3 Years</p>
+                <button class="connect-button">Connect</button>
+            </div>
+
+            <div class="course-card">
+                <h2>Balde</h2>
+                <p><strong>Skill:</strong> Web Development</p>
+                <p><strong>Experience:</strong> 2 Years</p>
+                <button class="connect-button">Connect</button>
+            </div>
+
+            <div class="course-card">
+                <h2>Lewandowski</h2>
+                <p><strong>Skill:</strong> Data Science</p>
+                <p><strong>Experience:</strong> 4 Years</p>
+                <button class="connect-button">Connect</button>
+            </div>
+        </div>
+
+        <a href="{% url 'index' %}" class="cta-button">Back Home</a>
+    </div>
+</body>
+</html>

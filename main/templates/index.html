@@ -1,6 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,12 +18,9 @@
         <div class="button-container">
             <button class="quote-button">"Megatron didn’t rise by slacking—neither will you"</button>
             <div class="cta-container">
-                <button class="cta-button">Explore Courses</button>
-                <a href="{% url 'register' %}">
-                    <button class="cta-button">Signup</button>
-                </a>
-                
-                <button class="auth-button">Login</button>
+                <a href="{% url 'explore' %}" class="cta-button">Explore Courses</a>
+                <a href="{% url 'register' %}" class="cta-button">Signup</a>
+                <a href="{% url 'login' %}" class="cta-button">Login</a>
             </div>
         </div>
     </div>

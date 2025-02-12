@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, auth
 from django.contrib import messages
 
 def index(request):
@@ -20,7 +20,7 @@ def register(request):
                 messages.error(request, "Username already taken...")
                 return redirect('register')
             else:
-                user = User.objects.create_user(username=username, email=email, password=password)
+                user = User.objects.create_user(username=username, email=email, password=password,)
                 user.save()
                 messages.success(request, "Account created successfully! You can now log in.")
                 return redirect('explore')
@@ -29,3 +29,26 @@ def register(request):
             return redirect('register')
 
     return render(request, 'register.html')
+
+def login(request):
+    
+    if request.method == 'POST':
+        
+        username = request.POST['username']
+        password = request.POST['password']
+        
+        user = auth.authenticate(username = username , password = password)
+        
+        if user is not None:
+            auth.login(request,user)
+            return redirect('explore')
+        
+        else:
+            messages.info(request,'Credentials Invalid')
+            return redirect('login')
+    
+    return render(request, 'login.html')
+
+def explore(request):
+    
+    return render(request,'explore.html')

@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    background: linear-gradient(to right, #ffe5b4, #ffd700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 20px solid white;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Heading */
+h1 {
+    font-size: 3rem;
+    color: black;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+/* Course List */
+.course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Course Card */
+.course-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.course-card h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #ff4500;
+}
+
+.course-card p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+/* Connect Button */
+.connect-button {
+    background-color: red;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.connect-button:hover {
+    background-color: darkred;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.back-button:hover {
+    background-color: #333;
+}
+
+/* Make sure <a> elements styled as buttons behave correctly */
+.cta-button {
+    display: inline-block; /* Ensures it acts like a button */
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none; /* Removes underline */
+    cursor: pointer;
+    text-align: center;
+    background-color: #ff4500; /* Orange */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    background-color: #e03e00; /* Darker orange */
+}
